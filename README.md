@@ -8,6 +8,9 @@ For example, for a single file:
 
 For example, with all files in a project:
 
-    find . -name "*.yml" -print0 | tr '\n' '\0' | xargs -0 -I '$' docker run --rm -v "$(pwd)":/app/code dcycle/yaml-lint:2 -s "code/$"
+    find . -name "*.yml" -not -path "*drupal/config*" -print0 | \
+      tr '\n' '\0' | \
+      xargs -0 -I '$' docker run --rm \
+      -v "$(pwd)":/app/code dcycle/yaml-lint:2 -s "code/$"
 
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/yaml-lint/).
