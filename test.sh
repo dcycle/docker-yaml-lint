@@ -1,5 +1,5 @@
 set -e
-docker pull node
+docker pull python
 docker build -t local-dcycle-yaml-lint-image .
 
 echo " => Smoke test (--help)"
