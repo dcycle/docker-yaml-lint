@@ -1,9 +1,9 @@
-FROM python
+FROM python:alpine
 
-RUN mkdir -p /app/code
-RUN cd /app
-RUN pip install yamllint
-RUN yamllint -h
+RUN mkdir -p /app/code && \
+  cd /app && \
+  pip install yamllint && \
+  yamllint -h
 
 WORKDIR /app
 
