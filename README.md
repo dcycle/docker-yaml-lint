@@ -1,4 +1,4 @@
-[![GitHub Actions](https://github.com/dcycle/docker-jenkins/actions/workflows/config.yml/badge.svg)](../../actions/workflows/config.yml)
+[![GitHub Actions](https://github.com/dcycle/docker-yaml-lint/actions/workflows/config.yml/badge.svg)](../../actions/workflows/config.yml)
 
 Lint Yaml files with [yamllint](https://github.com/adrienverge/yamllint).
 
