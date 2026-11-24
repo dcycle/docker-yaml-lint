@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/dcycle/docker-yaml-lint.svg?style=svg)](https://circleci.com/gh/dcycle/docker-yaml-lint)
+[![GitHub Actions](https://github.com/dcycle/docker-yaml-lint/actions/workflows/config.yml/badge.svg)](../../actions/workflows/config.yml)
 
 Lint Yaml files with [yamllint](https://github.com/adrienverge/yamllint).
 
